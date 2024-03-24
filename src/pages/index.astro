@@ -1,9 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Header.astro';
+import Badge from '../components/Badge.astro'
+import LinkedIn from '../components/icons/LinkedIn.astro'
+import Socialred from '../components/socialred.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>ihfhbie</h1>
+
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<h1 class="text-white text-4xl font-bold flex  flex-row gap-x-2">
+			Hey, soy Yoiner <a href="https://www.linkedin.com/in/llanosmoncada" target="_blank" class="flex justify-center items-center"> 
+				<Badge>Disponible para trabajar</Badge></a></h1>
+		<h2 class="text-xl">Desarrollador web , experiencia en diferentes tecnologias. <span class=" text-yellow-5s00 "> De colombia </span> </h2>
+		<ul>
+			<li>
+			<Socialred>
+				<LinkedIn class="w-6 h-6"/>
+				LinkedIn
+			</Socialred>
+			
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</li>
+
+		</ul>
+	</section>
 	</main>
