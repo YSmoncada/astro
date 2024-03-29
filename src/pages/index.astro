@@ -3,30 +3,37 @@ import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro'
 import LinkedIn from '../components/icons/LinkedIn.astro'
 import Socialred from '../components/socialred.astro';
-
+import Experience from '../components/Experience.astro';
+import Section from '../components/SectionContainer.astro'
+import Work from '../components/icons/work.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Porfolio de Yoiner steven programador y desarrollador web.">
 	<main>
 
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<Section id="Sobre-mi" class="py-44">
 		<h1 class="text-white text-4xl font-bold flex  flex-row gap-x-2">
 			Hey, soy Yoiner <a href="https://www.linkedin.com/in/llanosmoncada" target="_blank" class="flex justify-center items-center"> 
 				<Badge>Disponible para trabajar</Badge></a></h1>
 		<h2 class="text-xl">Desarrollador web , experiencia en diferentes tecnologias. <span class=" text-yellow-5s00 "> De colombia </span> </h2>
-		<ul>
-			<li>
-			<Socialred>
-				<LinkedIn class="w-6 h-6"/>
+		<nav class="flex gap-x-4 p-4">
+			<Socialred href="https://www.linkedin.com/in/llanosmoncada/">
+				<LinkedIn class="w-7 h-5"/>
 				LinkedIn
 			</Socialred>
-			
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
-		</li>
 
-		</ul>
-	</section>
+			<Socialred href="https://github.com/YSmoncada/astro">
+				<LinkedIn class="w-7 h-5"/>
+				GitHub
+			</Socialred>
+		</nav>
+		
+	<Section class="" id="Experience">
+		<h2 class="text-2xl font-semibold mb-4 flex gap-x-4	"><Work class="zise-7"/>Experiencia Laboral</h2>
+	<Experience/>
+</Section>
+
+	</Section>
+
+
 	</main>
